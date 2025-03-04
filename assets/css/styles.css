@@ -3,6 +3,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(
+    top,
+    #aeb7bb 0%,
+    #aab7bc 50%,
+    #d9dedf 51%,
+    #e0dcdc 100%
+  );
+}
 
 .nav {
   background-color: #7abd98;
@@ -294,6 +316,22 @@
   font-weight: 600;
   line-height: 28px;
   color: #fff;
+}
+
+.footer__learn-about {
+  text-align: left;
+  padding: 26px 0 46px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.footer__learn-about:hover a {
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+}
+
+.footer__learn-about a {
+  color: #e85450;
 }
 
 .company__introduction {
